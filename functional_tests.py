@@ -1,6 +1,45 @@
 from selenium import webdriver
+import unittest
 
-browser = webdriver.Firefox()
-browser.get('http://localhost:8000')
 
-assert 'Django' in browser.title
+
+class NewVisitorTest(unittest.TestCase):
+    ''' Тест нового пользователя'''
+
+    def setUp(self):
+        '''установка'''
+        self.browser = webdriver.Firefox()
+
+    def tearDown(self):
+        '''демонтаж'''
+        self.browser.quit()
+
+
+    def test_can_start_a_list_and_retrieve_it_later(self):
+        ''' тест: можно начать список и получить его позже'''
+
+        #Эдит слышала про крутое новое онлайн-приложение со списком
+        #неотложныйх дел. Она решает оценить его домашнюю страницу
+        self.browser.get('http://localhost:8000')
+
+
+        #Она видит, что заголовок и шапка страницы говорят о списках неотложных дел
+        self.assertIn('To-Do', self.browser.title)
+        self.fail('Закончить тест!')
+
+        #Ей сразу же предлагается ввести элемент списка
+
+        #Она набирает в текстовом поле "Купить павлиньи перья"
+
+        #Когда она нажимает enter, страница обновляется, и теперь страница
+        #содержит "1: Купить павлинья перья" в качестве элемента списка
+
+        #Текстовое поле по-прежнему предлагает ее добавить еще один элемент, Она вводит еще один
+
+
+        #После этого она видит что сайт сгенериорвал уникальный УРЛ адрес для нее( с ее списком)
+
+
+
+if __name__ == '__main__':
+    unittest.main(warnings='ignore')
