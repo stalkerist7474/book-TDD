@@ -51,3 +51,13 @@ Read port: 53165
 1669052884502	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
 console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Remix74\\AppData\\Local\\Temp\\rust_mozprofilee5S1Ge\\search.json.mozlz4", (void 0)))
 1669052885726	Marionette	INFO	Stopped listening on port 53165
+1669152633795	geckodriver	INFO	Listening on 127.0.0.1:54377
+1669152636872	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\Remix74\\AppData\\Local\\Temp\\rust_mozprofileJvghD8"
+1669152637263	Marionette	INFO	Marionette enabled
+1669152637267	Marionette	INFO	Listening on port 54391
+Read port: 54391
+1669152637564	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Remix74\\AppData\\Local\\Temp\\rust_mozprofileJvghD8\\search.json.mozlz4", (void 0)))
+1669152638558	Marionette	INFO	Stopped listening on port 54391
+console.error: services.settings: 
+  main/query-stripping Signature failed  TypeError: NetworkError: Network request failed
