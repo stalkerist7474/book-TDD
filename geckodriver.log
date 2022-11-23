@@ -61,3 +61,23 @@ console.warn: SearchSettings: "get: No settings file exists, new profile?" (new 
 1669152638558	Marionette	INFO	Stopped listening on port 54391
 console.error: services.settings: 
   main/query-stripping Signature failed  TypeError: NetworkError: Network request failed
+1669231665586	geckodriver	INFO	Listening on 127.0.0.1:55203
+1669231668663	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\Remix74\\AppData\\Local\\Temp\\rust_mozprofileoFQ2ZG"
+1669231669050	Marionette	INFO	Marionette enabled
+1669231669054	Marionette	INFO	Listening on port 55218
+Read port: 55218
+1669231669384	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Remix74\\AppData\\Local\\Temp\\rust_mozprofileoFQ2ZG\\search.json.mozlz4", (void 0)))
+1669231670381	Marionette	INFO	Stopped listening on port 55218
+console.error: services.settings: 
+  main/query-stripping Signature failed  TypeError: NetworkError: Network request failed
+1669232644123	geckodriver	INFO	Listening on 127.0.0.1:57089
+1669232647176	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\Remix74\\AppData\\Local\\Temp\\rust_mozprofile6KJ0S9"
+1669232647472	Marionette	INFO	Marionette enabled
+1669232647475	Marionette	INFO	Listening on port 57115
+Read port: 57115
+1669232647752	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Remix74\\AppData\\Local\\Temp\\rust_mozprofile6KJ0S9\\search.json.mozlz4", (void 0)))
+1669232649046	Marionette	INFO	Stopped listening on port 57115
+console.error: services.settings: 
+  main/query-stripping Signature failed  TypeError: NetworkError: Network request failed
