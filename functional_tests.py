@@ -45,13 +45,15 @@ class NewVisitorTest(unittest.TestCase):
 
         #Когда она нажимает enter, страница обновляется, и теперь страница
         #содержит "1: Купить павлинья перья" в качестве элемента списка
-        inputbox.sens_keys(Keys.ENTER)
+        inputbox.send_keys(Keys.ENTER)
         time.sleep(1)
 
         table = self.browser.find_element_by_id('id_list_table')
         rows = table.find_elements_by_tag_name('tr')
         self.assertTrue(
-            any(row.text == '1: Купить павлинья перья' for row in rows)
+            any(row.text == '1: Купить павлинья перья' for row in rows),
+            'Новый элемент списка не появился в таблице'
+
         )
 
         
